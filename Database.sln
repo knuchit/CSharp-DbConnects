@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database.Oracle", "Database.Oracle\Database.Oracle.csproj", "{454F237B-CFF6-427F-A7D3-72A220F38AF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database.MySql", "Database.MySql\Database.MySql.csproj", "{9E6D4218-6263-447F-A4D8-D0322F064D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database.Postgress", "Database.Postgress\Database.Postgress.csproj", "{2F685F20-C5F0-4528-8AB8-4EA1AD2C6F90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database.MSSql", "Database.MSSQL\Database.MSSql.csproj", "{D23E43F3-4D2E-4324-A33B-201768D333FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{454F237B-CFF6-427F-A7D3-72A220F38AF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454F237B-CFF6-427F-A7D3-72A220F38AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454F237B-CFF6-427F-A7D3-72A220F38AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454F237B-CFF6-427F-A7D3-72A220F38AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E6D4218-6263-447F-A4D8-D0322F064D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E6D4218-6263-447F-A4D8-D0322F064D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E6D4218-6263-447F-A4D8-D0322F064D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E6D4218-6263-447F-A4D8-D0322F064D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F685F20-C5F0-4528-8AB8-4EA1AD2C6F90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F685F20-C5F0-4528-8AB8-4EA1AD2C6F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F685F20-C5F0-4528-8AB8-4EA1AD2C6F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F685F20-C5F0-4528-8AB8-4EA1AD2C6F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D23E43F3-4D2E-4324-A33B-201768D333FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D23E43F3-4D2E-4324-A33B-201768D333FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D23E43F3-4D2E-4324-A33B-201768D333FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D23E43F3-4D2E-4324-A33B-201768D333FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CDAFA33-C0A1-41CB-B2A8-54D5754EB67B}
+	EndGlobalSection
+EndGlobal
