@@ -11,6 +11,10 @@ namespace Database.MySql
         public int TimeOut { get; set; }
         public string ConnectionString { get; set; }
         // Constructor
+        public Connector()
+        {
+            this.TimeOut = 0;
+        }
         public Connector(string connectonString)
         {
             this.TimeOut = 0;
@@ -183,6 +187,14 @@ namespace Database.MySql
                 }
             }
             return true;
+        }
+        public void SetConnectionString(string server, int port, string schema, string username, string password)
+        {
+            this.ConnectionString = string.Format(@"Datasource={0};Port={1};Database={2};uid={3};pwd={4};", server, port, schema, username, password);
+        }
+        public void SetConnectionString(string server, string schema, string username, string password)
+        {
+            this.ConnectionString = string.Format(@"Datasource={0};Database={1};uid={2};pwd={3};", server, schema, username, password);
         }
     }
 }

@@ -13,6 +13,10 @@ namespace Database.MSSql
         public int TimeOut { get; set; }
         public string ConnectionString { get; set; }
         // Constructor
+        public Connector()
+        {
+            this.TimeOut = 0;
+        }
         public Connector(string connectonString)
         {
             this.TimeOut = 0;
@@ -185,6 +189,26 @@ namespace Database.MSSql
                 }
             }
             return true;
+        }
+
+        public void SetConnectionString(string server, int port, string schema, string username, string password)
+        {
+            this.ConnectionString = string.Format(@"Data Source={0},{1};Initial Catalog={2};Persist Security Info=True;User ID={3};Password={4}", server, port, schema, username, password);
+        }
+        public void SetConnectionString(string server, string schema, string username, string password)
+        {
+            this.ConnectionString = string.Format(@"Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3}", server, schema, username, password);
+
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="server">.\SQLEXPRESS</param>
+        /// <param name="schema">db1</param>
+        public void SetConnectionString(string server, string schema)
+        {
+            this.ConnectionString = string.Format(@"Data Source={0};Initial Catalog={1};Integrated Security=True;", server, schema);
+
         }
     }
 }

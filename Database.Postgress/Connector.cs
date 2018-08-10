@@ -11,6 +11,10 @@ namespace Database.Postgress
         public int TimeOut { get; set; }
         public string ConnectionString { get; set; }
         // Constructor
+        public Connector()
+        {
+            this.TimeOut = 0;
+        }
         public Connector(string connectonString)
         {
             this.TimeOut = 0;
@@ -182,6 +186,11 @@ namespace Database.Postgress
                 }
             }
             return true;
+        }
+
+        public void SetConnectionString(string server, int port, string schema, string username, string password)
+        {
+            this.ConnectionString = string.Format(@"Server={0};Port={1};Database={2};User Id={3};Password={4}", server, port, schema, username, password);
         }
     }
 }

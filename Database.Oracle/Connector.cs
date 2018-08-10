@@ -13,6 +13,11 @@ namespace Database.Oracle
         public int TimeOut { get; set; }
         public string ConnectionString { get; set; }
         // Constructor
+        public Connector()
+        {
+            this.TimeOut = 0;
+        }
+
         public Connector(string connectonString)
         {
             this.TimeOut = 0;
@@ -185,6 +190,15 @@ namespace Database.Oracle
                 }
             }
             return true;
+        }
+
+        public void SetConnectionString(string server, int port, string schema, string username, string password)
+        {
+            this.ConnectionString = string.Format(@"Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST={0})(PORT={1}))(CONNECT_DATA=(SERVER=default)(SID={2})));Password={3};User ID={4}", server, port, schema, password, username);
+        }
+        public void SetConnectionString(string tnsName, string username, string password)
+        {
+            this.ConnectionString = string.Format(@"Data Source={0};User ID={1};Password={2};", tnsName, username, password);
         }
     }
 }
