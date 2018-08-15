@@ -17,7 +17,3 @@ for oracle
 - Database.Postgress.dll
 - Npgsql.dll
 - Mono.Security.dll
-
-#Step 2 used c# code
-
-
