@@ -1,8 +1,7 @@
 # CSharp Database Connector
 # Support .net >= 4.0
 
-#Step 1 Add References into Project 
-for oracle
+#References for oracle
 - Database.Oracle.dll
 - Oracle.DataAccess.dll
 
